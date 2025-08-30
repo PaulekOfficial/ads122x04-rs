@@ -6,12 +6,13 @@ edition = "2021"
 repository = "https://github.com/hacknus/ads122x04-rs"
 description = "Platform-agnostic driver for the ADS122C04 and ADS122U04 analog to digital converters."
 readme = "README.md"
-keywords = ["adc", "adc122u04", "adc122c04", "driver", "embedded-hal-driver"]
+keywords = ["adc", "adc122c04", "adc122u04", "driver", "embedded-hal-driver"]
 categories = ["embedded", "hardware-support", "no-std"]
 documentation = "https://docs.rs/ads122x04"
 homepage = "https://github.com/hacknus/ads122x04-rs"
 license = "Apache-2.0"
 
 [dependencies]
-embedded-hal = { version = "0.2", features = ["unproven"] }
+embedded-hal-async = "1.0.0"
+embedded-io-async = "0.6.1"
 nb = "1"
